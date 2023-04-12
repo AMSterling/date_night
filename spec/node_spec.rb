@@ -1,5 +1,5 @@
-require './lib/node'
 require 'spec_helper'
+require './lib/node'
 
 RSpec.describe Node do
   let(:node) { Node.new(61, "Bill & Ted's Excellent Adventure")}
@@ -11,7 +11,6 @@ RSpec.describe Node do
   it 'has data' do
   	expect(node.data).to eq({"Bill & Ted's Excellent Adventure"=>61})
   end
-
 
   it 'starts with no left or right link' do
   	expect(node.left).to be_nil
